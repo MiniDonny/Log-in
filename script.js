@@ -20,7 +20,7 @@ BtnLogin.addEventListener('click', () => {
 IconClose.addEventListener('click', () => {
     wrapper.classList.remove('btnActive');
 })
-/*FUNCTION OF THE BURGER MENU BUTTON THAT ADDES THE CLASS 'navegation' TO THE CLASS '.containerBurgerMenu'
+/*FUNCTION OF THE BURGER MENU BUTTON THAT ADDES THE CLASS 'navegation' TO THE CLASS '.containerBurgerMenu'*/
 function burgerMenu(){
     document.querySelector(".navegation").classList.toggle("viewBurgerMenu")
-}*/
+}

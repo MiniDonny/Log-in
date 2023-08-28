@@ -15,8 +15,8 @@ a{
 }
 /*COLORS*/
 :root{
-    --withe: #FFF;
-    --green-dark: #162938;
+    --pastel_clear: #D9C7C5;
+    --pastel_dark_purple: #592C38;
     --border-grey: rgba(225, 225, 225, .5);
     --border-black: rgba(0, 0, 0, .5);
 }
@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('./imagenes/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -45,13 +45,13 @@ header{
 }
 .logo{
     font-size: 2em;
-    color: var(--withe);
+    color: var(--pastel_dark_purple);
     user-select: none;
 }
 .navegation a{
     position: relative;
     font: 1.1em;
-    color: var(--withe);
+    color: var(--pastel_dark_purple);
     font-weight: 500;
     margin-left: 40px;
 }
@@ -62,7 +62,7 @@ header{
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: var(--withe);
+    background: var(--pastel_dark_purple);
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -77,19 +77,19 @@ header{
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid var(--withe);
+    border: 2px solid var(--pastel_dark_purple);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: var(--withe);
+    color: var(--pastel_dark_purple);
     font-weight: 500;
     margin-left: 40px;
     transition: .5s;
 }
 .navegation .buttonLogin:hover{
-    background-color: var(--withe);
-    color: var(--green-dark);
+    background-color:var(--pastel_dark_purple);
+    color: var(--pastel_clear);
 }
 .burgerMenu{
     display: none;
@@ -149,9 +149,9 @@ header{
     right: 0;
     width: 45px;
     height: 45px;
-    background: var(--green-dark);
+    background: var(--pastel_dark_purple);
     font-size: 2em;
-    color: var(--withe);
+    color: var(--pastel_clear);
     display: flex;
     justify-content: center; 
     align-items: center;  
@@ -161,14 +161,14 @@ header{
 }
 .box-login h2{
     font-size: 2em;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     text-align: center;
 }
 .input-box{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid var(--green-dark);
+    border-bottom: 2px solid var(--pastel_dark_purple);
     margin: 30px 0;
 }
 .input-box label{
@@ -177,7 +177,7 @@ header{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     font-weight: 500;
     pointer-events: none;
 }
@@ -189,7 +189,7 @@ header{
     outline: none;
     transition: .5s;
     font-size: 1em;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     font-weight: 600;
     padding: 0px 35px 0px 5px;
 }
@@ -201,23 +201,23 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     line-height: 57px;
 }
 .remember{
     font-size: 9m;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     font-weight: 500;
     margin: -15px 0px 15px;
     display: flex;
     justify-content: space-between;
 }
 .remember label input{
-    accent-color: var(--green-dark);
+    accent-color: var(--pastel_dark_purple);
     margin-right: 3px;
 }
 .remember a{
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     text-decoration: none;
 }
 .remember a:hover{
@@ -226,24 +226,24 @@ header{
 .btn{
     width: 100%;
     height: 45px;
-    background: var(--green-dark);
+    background: var(--pastel_dark_purple);
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: var(--withe);
+    color: var(--pastel_clear);
     font-weight: 500;
 }
 .login-register{
     font-size: .9em;
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     text-align: center;
     font-weight: 500;
     margin: 25px 0px 10px;
 }
 .login-register p a{
-    color: var(--green-dark);
+    color: var(--pastel_dark_purple);
     text-decoration: none;
     font-weight: 600;
 }
@@ -258,12 +258,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background: var(--pastel_dark_purple);
 }
 .creator{
-    color: var(--withe);
+    color: var(--pastel_clear);
 }
-/*@media (max-width: 800px){
+@media (max-width: 800px){
     .burgerMenu{
         display: block;
         width: 130px;
@@ -295,4 +295,4 @@ footer{
         position: sticky;
         border-top: -300px;
     } 
-}*/
+}
