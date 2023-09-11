@@ -5,18 +5,7 @@ $passwordDB = "root";
 $hostDB = "localhost";
 $logindb = 'logindb';
 /*Coneccion Base de Datos*/
-try{
-    $connection=new PDO("mysql:host=$hostDB;dbname=$logindb",$userDB,$passwordDB);
-    echo "Conectando...";
-    $judgment=$connection->prepare("SELECT * FROM register");
-    $judgment->execute();
-    $registers = $judgment->fetchAll(PDO::FETCH_ASSOC);
-    print_r($registers);
-}
-catch(Exception $error){
-    echo $error->getMessage();
-}
-$connection = mysqli_connect($hostDB, $userDB, $passwordDB);
+$connection = mysqli_connect($hostDB, $userDB, $passwordDB,);
 /*Verificamos la coneccion a base de datos*/
 if(!$connection){
     echo 'Conectado exitosamente' . mysqli_connect_error();

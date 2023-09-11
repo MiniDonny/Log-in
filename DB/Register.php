@@ -25,7 +25,8 @@
 <?php 
 /**/
 include 'Conection.php';
-$connection = mysqli_connect("localhost", "username", "password", "database_name");
+
+$connection = mysqli_connect("localhost", "root", "root", "logindb");
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -40,7 +41,7 @@ if (mysqli_query($connection, $query)) {
 } else {
     echo "Error: " . mysqli_error($connection);
 }
-/*$consulta = "SELECT * FROM tabla where id = '2'" si queremos que nos muestre solo un registro especifico de ID*/
+/*$consulta = "SELECT * FROM tabla where id = '1'" si queremos que nos muestre solo un registro especifico de ID*/
 $consultation = "SELECT * FROM register ";
 
 $result = mysqli_query($connection, $consultation);
