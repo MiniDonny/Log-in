@@ -15,8 +15,9 @@
             <a href="#">SERVICES</a>
             <a href="#">CONTACT</a>
             <button class="buttonLogin">LOGIN</button>
+            <button onclick="burgerMenu()" class="burgerMenu"><ion-icon name="menu-outline" class="OpenBurgerMenuIcon"></ion-icon></button>
         </nav>
-       <button onclick="burgerMenu()" class="burgerMenu">BOTON</button>
+       <button onclick="burgerMenu()" class="burgerMenu"><ion-icon name="menu-outline" class="OpenBurgerMenuIcon"></ion-icon></button>
     </header>
     <main>
         <div class="wrapper">
@@ -26,7 +27,7 @@
 
             <div class="box-login login">
                 <h2>LOGIN</h2>
-                <form action="./DB.php" method="post">
+                <form action="#" method="post">
                     <div class="input-box">
                         <span class="icon"><ion-icon name="mail"></ion-icon></span>
                         <input type="email" name="mail" required>
@@ -34,12 +35,12 @@
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" name="password" required>
+                        <input type="password" name="pass" required>
                         <label>Password</label>
                     </div>
                     <div class="remember">
-                        <laber><input type="checkbox">Remember Me
-                        </laber>
+                        <label><input type="checkbox">Remember Me
+                        </label>
                         <a href="#">Forgot Password?</a>
                     </div>
                     <button type="submit" class="btn">LOGIN</button>
@@ -51,7 +52,7 @@
 
             <div class="box-login register">
                 <h2>REGISTRATION</h2>
-                <form action="#">
+                <form action="./DB/Register.php">
                     <div class="input-box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
                         <input type="text" name="username" required>
@@ -64,12 +65,12 @@
                     </div>
                     <div class="input-box">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" name="password" required>
+                        <input type="password" name="pass" required>
                         <label>Password</label>
                     </div>
                     <div class="remember">
                         <laber><input type="checkbox">I Agree To The Terms & Conditions
-                        </laber>
+                        </label>
                     </div>
                     <button type="submit" class="btn">REGISTER</button>
                     <div class="login-register">

@@ -23,4 +23,5 @@ IconClose.addEventListener('click', () => {
 /*FUNCTION OF THE BURGER MENU BUTTON THAT ADDES THE CLASS 'navegation' TO THE CLASS '.containerBurgerMenu'*/
 function burgerMenu(){
     document.querySelector(".navegation").classList.toggle("viewBurgerMenu")
+    
 }
