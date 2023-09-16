@@ -1,4 +1,4 @@
-/*NODOS*/
+/*CREATE NODOS*/
 const wrapper = document.querySelector('.wrapper');
 const LoginLink = document.querySelector('.login-link');
 const RegisterLink = document.querySelector('.register-link');
@@ -22,6 +22,15 @@ IconClose.addEventListener('click', () => {
 })
 /*FUNCTION OF THE BURGER MENU BUTTON THAT ADDES THE CLASS 'navegation' TO THE CLASS '.containerBurgerMenu'*/
 function burgerMenu(){
-    document.querySelector(".navegation").classList.toggle("viewBurgerMenu")
-    
+    document.querySelector(".navegation").classList.toggle("viewBurgerMenu") 
+}
+/*EMPTY IMPUTS FROM THE REGISTER FORM*/
+function validateRegister(){
+    formRegister.reset();
+    return false;
+}
+/*EMPTY IMPUTS FROM THE LOGIN FORM*/
+function validateLogin(){
+    formLogin.reset();
+    return false;
 }

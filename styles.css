@@ -30,7 +30,6 @@ body{
     background: url('./imagenes/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 /*HEADER*/
 header{
@@ -419,5 +418,3 @@ footer{
         gap: 50px;
     } 
 }
-
-
